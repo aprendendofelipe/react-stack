@@ -62,14 +62,8 @@ describe('ui/Notifications', () => {
     });
 
     describe('read state styling', () => {
-      // Workaround: after upgrading jsdom to `v29.1.1`, CSS custom property
-      // names become lowercased (e.g. `--fgColor-default` becomes
-      // `--fgcolor-default`), even though custom property names are
-      // case-sensitive per spec. Real browsers preserve the original case.
-      // Normalizing with `.toLowerCase()` here just to keep the assertion
-      // stable under jsdom.
-      const readColor = 'var(--fgColor-disabled)'.toLowerCase();
-      const unreadColor = 'var(--fgColor-default)'.toLowerCase();
+      const readColor = 'var(--fgColor-disabled)';
+      const unreadColor = 'var(--fgColor-default)';
 
       it('applies read style when isItemRead returns true', () => {
         const notifications = createNotificationList(1);
