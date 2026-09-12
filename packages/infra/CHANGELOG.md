@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.0](https://github.com/aprendendofelipe/react-stack/compare/infra-v0.1.1...infra-v0.2.0) (2026-09-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** update @axiomhq/js and @vercel/functions dependencies
+
+### Features
+
+* **deps:** update @axiomhq/js and @vercel/functions dependencies ([9221ad2](https://github.com/aprendendofelipe/react-stack/commit/9221ad23e5be6ac2ff2c87609e1799c7360cb7da))
+
 ## [0.1.1](https://github.com/aprendendofelipe/react-stack/compare/infra-v0.1.0...infra-v0.1.1) (2026-07-19)
 
 
