@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/aprendendofelipe/react-stack/compare/infra-v0.2.0...infra-v0.2.1) (2026-11-20)
+
+
+### Features
+
+* update dependencies ([2831da5](https://github.com/aprendendofelipe/react-stack/commit/2831da5b13e9af1a99deb1cea243d3565f451521))
+
 ## [0.2.0](https://github.com/aprendendofelipe/react-stack/compare/infra-v0.1.1...infra-v0.2.0) (2026-09-12)
 
 

@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.3.10](https://github.com/aprendendofelipe/react-stack/compare/form-example-v0.3.9...form-example-v0.3.10) (2026-11-20)
+
+
+### Features
+
+* update dependencies ([2831da5](https://github.com/aprendendofelipe/react-stack/commit/2831da5b13e9af1a99deb1cea243d3565f451521))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @barso/ui bumped from 0.7.1 to 0.7.2
+
 ## [0.3.9](https://github.com/aprendendofelipe/react-stack/compare/form-example-v0.3.8...form-example-v0.3.9) (2026-07-19)
 
 
