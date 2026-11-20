@@ -29,8 +29,8 @@
   "dependencies": {
     "@axiomhq/js": "2.0.0",
     "@barso/helpers": "^0.5.1",
-    "@vercel/functions": "3.9.7",
-    "pino": "10.3.1"
+    "@vercel/functions": "3.11.3",
+    "pino": "10.4.0"
   },
   "author": "aprendendofelipe",
   "repository": {
