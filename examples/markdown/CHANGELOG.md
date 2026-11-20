@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.9](https://github.com/aprendendofelipe/react-stack/compare/markdown-example-v0.1.8...markdown-example-v0.1.9) (2026-11-20)
+
+
+### Features
+
+* update dependencies ([2831da5](https://github.com/aprendendofelipe/react-stack/commit/2831da5b13e9af1a99deb1cea243d3565f451521))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @barso/ui bumped from 0.7.1 to 0.7.2
+
 ## [0.1.8](https://github.com/aprendendofelipe/react-stack/compare/markdown-example-v0.1.7...markdown-example-v0.1.8) (2026-07-19)
 
 

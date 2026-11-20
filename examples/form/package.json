@@ -1,6 +1,6 @@
 {
   "name": "form-example",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,7 +11,7 @@
     "@faker-js/faker": "10.6.0",
     "@primer/octicons-react": "19.15.2",
     "@barso/forms": "0.5.1",
-    "@barso/ui": "0.7.1",
+    "@barso/ui": "0.7.2",
     "next": "16.4.6",
     "react": "19.3.1",
     "react-dom": "19.3.1",
