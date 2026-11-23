@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/aprendendofelipe/react-stack/compare/helpers-v0.5.1...helpers-v0.5.2) (2026-11-23)
+
+
+### Bug Fixes
+
+* **helpers:** fix off-by-one and reduce allocations in truncate ([c0bd60c](https://github.com/aprendendofelipe/react-stack/commit/c0bd60c386a8d95568ed77bec9612cd7fb338150))
+
 ## [0.5.1](https://github.com/aprendendofelipe/react-stack/compare/helpers-v0.5.0...helpers-v0.5.1) (2026-07-19)
 
 

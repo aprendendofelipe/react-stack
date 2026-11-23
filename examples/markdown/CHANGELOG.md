@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.10](https://github.com/aprendendofelipe/react-stack/compare/markdown-example-v0.1.9...markdown-example-v0.1.10) (2026-11-23)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @barso/helpers bumped from 0.5.1 to 0.5.2
+
 ## [0.1.9](https://github.com/aprendendofelipe/react-stack/compare/markdown-example-v0.1.8...markdown-example-v0.1.9) (2026-11-20)
 
 

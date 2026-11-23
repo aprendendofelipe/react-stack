@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.2](https://github.com/aprendendofelipe/react-stack/compare/hooks-v0.2.1...hooks-v0.2.2) (2026-11-23)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @barso/helpers bumped from ^0.5.1 to ^0.5.2
+
 ## [0.2.1](https://github.com/aprendendofelipe/react-stack/compare/hooks-v0.2.0...hooks-v0.2.1) (2026-07-19)
 
 
