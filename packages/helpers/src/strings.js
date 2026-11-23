@@ -15,24 +15,31 @@ export function trimEnd(str) {
 }
 
 const ELLIPSIS = '...';
-const graphemeSegmenter = new Intl.Segmenter({ granularity: 'grapheme' });
+const graphemeSegmenter = new Intl.Segmenter();
 
 export function truncate(str, maxLength) {
-  if (typeof maxLength !== 'number') return str;
-  if (typeof str !== 'string') return str;
-  if (str.length <= maxLength) return str;
+  if (typeof str !== 'string' || typeof maxLength !== 'number' || str.length <= maxLength || Number.isNaN(maxLength)) {
+    return str;
+  }
+
+  maxLength = Math.floor(maxLength);
+
   if (maxLength <= 0) return '';
 
   const ellipsis = ELLIPSIS.slice(0, maxLength);
+  const keep = maxLength - ellipsis.length;
 
-  const graphemes = [];
+  let count = 0;
+  let cut = 0;
 
-  for (const s of graphemeSegmenter.segment(str)) {
-    if (graphemes.length > maxLength) {
-      return trimEnd(graphemes.slice(0, maxLength - ellipsis.length).join('')) + ellipsis;
+  for (const { index } of graphemeSegmenter.segment(str)) {
+    if (count === keep) cut = index;
+
+    if (count === maxLength) {
+      return trimEnd(str.slice(0, cut)) + ellipsis;
     }
 
-    graphemes.push(s.segment);
+    count++;
   }
 
   return str;

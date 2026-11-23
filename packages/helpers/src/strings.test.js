@@ -92,6 +92,15 @@ describe('helpers', () => {
       expect(result).toBe(input);
     });
 
+    it('should return the original string if maxLength is NaN', () => {
+      const input = 'Max length is NaN';
+      expect(truncate(input, NaN)).toBe(input);
+    });
+
+    it('should floor non-integer maxLength values', () => {
+      expect(truncate('Hello world', 8.9)).toBe('Hello...');
+    });
+
     it('should return the same object if input is not a string', () => {
       const input = 1234567890;
       const result = truncate(input, 5);
@@ -129,12 +138,16 @@ describe('helpers', () => {
       expect(result).toBe('👩‍❤️‍💋‍👨');
     });
 
-    it('should not truncate when grapheme count is below maxLength', () => {
+    it('should not truncate when grapheme count is below or equal to maxLength', () => {
       const input = 'Hello 👩‍❤️‍💋‍👨!';
       expect(input).toHaveLength(18);
 
-      const result = truncate(input, 15);
-      expect(result).toBe(input);
+      expect(truncate(input, 15)).toBe(input);
+      expect(truncate('😀'.repeat(10), 10)).toBe('😀'.repeat(10));
+    });
+
+    it('should truncate when grapheme count is maxLength + 1', () => {
+      expect(truncate('😀'.repeat(11), 10)).toBe('😀'.repeat(7) + '...');
     });
 
     it('should handle emojis correctly', () => {
